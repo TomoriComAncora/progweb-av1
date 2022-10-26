@@ -45,7 +45,7 @@ function App() {
          *        - title: contem a string do titulo do jogo
          *        - adsCount: contém o número de ads de dentro de _count
          */
-        games.map((game: Game) => <GameBanner chave={game.id} imagem={game.bannerUrl} titulo={game.title} contador={game})
+        games.map((game: Game) => <GameBanner key={game.id} imagem={game.bannerUrl} titulo={game.title} contador={game._count.ads})
       }
 
       {
@@ -53,11 +53,7 @@ function App() {
          * Remova o trecho abaixo quando inserir o conteúdo da resposta acima
          */
       }
-      <GameBanner />
-      <GameBanner />
-      <GameBanner />
-      <GameBanner />
-      <GameBanner />
+
 
     </div>
 
