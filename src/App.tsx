@@ -45,6 +45,7 @@ function App() {
          *        - title: contem a string do titulo do jogo
          *        - adsCount: contém o número de ads de dentro de _count
          */
+        games.map((game: Game) => <GameBanner chave={game.id} imagem={game.bannerUrl} titulo={game.title} contador={game})
       }
 
       {
