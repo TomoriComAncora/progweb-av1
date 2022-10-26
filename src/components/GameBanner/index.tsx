@@ -3,6 +3,11 @@
  * (2pt) - Use a interface como o tipo das props do componente e substitua os 
  *          atributos estáticos das imagem (src), titulo e contador de anuncios pelas respectivas props
  */
+interface GameBannerProps{
+  imagem : string,
+  titulo : string,
+  contador : number;
+}
 
 export function GameBanner() {
   return (<><a href="" className="relative rounded-lg overflow-hidden">
